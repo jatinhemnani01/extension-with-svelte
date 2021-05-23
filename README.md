@@ -2,6 +2,10 @@
 
 ## Clone this repo and just edit the Svelte files.
 
+`npx degit jatinhemnani01/extension-with-svelte my-extension`
+
+### OR
+
 `git clone https://github.com/jatinhemnani01/extension-with-svelte.git`
 
 ### Everytime you make changes just run
