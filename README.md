@@ -4,14 +4,31 @@
 
 `npx degit jatinhemnani01/extension-with-svelte my-extension`
 
-### OR
+or
 
 `git clone https://github.com/jatinhemnani01/extension-with-svelte.git`
 
-### Everytime you make changes just run
+---
+
+## Everytime you make changes just run
 
 `npm run build`
 
-## And Upload the* **/public***  folder
+or with auto build on file change
 
-## [Buy Me A Coffee](https://www.buymeacoffee.com/jatinhemnani01 "Buy Me A Coffee")
+`npm run dev`
+
+---
+## And Upload this folder in your browser
+
+`/public`
+
+---
+## Adding TypeScript support just run
+
+`node scripts/setupTypeScript.js`
+
+---
+## [Buy Me A Coffee - Jatin](https://www.buymeacoffee.com/jatinhemnani01 "Buy Me A Coffee for Jatin")
+## [Buy Me A Coffee - Vuong](https://www.buymeacoffee.com/vuongngo "Buy Me A Coffee for Vuong")
+
