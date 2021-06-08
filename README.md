@@ -19,7 +19,7 @@ or with auto build on file change
 `npm run dev`
 
 ---
-## And Upload this folder in chrome
+## And Upload this folder in your browser
 
 `/public`
 
