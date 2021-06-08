@@ -2,9 +2,18 @@
     "name": "Counter App",
     "version": "1.0",
     "description": "Chrome extension + Svelte boilerplate",
+    "manifest_version": 3,
     "permissions": ["activeTab"],
-    "browser_action": {
+    "action": {
       "default_popup": "popup.html"
     },
-    "manifest_version": 2
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "js": ["content/index.js"],
+        "matches": ["https://*/*", "http://*/*"]
+      }
+    ]
   }
