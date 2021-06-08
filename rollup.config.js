@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
+import { emptyDir } from "rollup-plugin-empty-dir";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -29,12 +30,12 @@ function serve() {
 }
 
 export default {
-	input: 'src/main.js',
+	input: 'src/app.js',
 	output: {
 		sourcemap: true,
 		format: 'iife',
-		name: 'app',
-		file: 'public/build/bundle.js'
+		name: 'bundle',
+		dir: 'public/build/',
 	},
 	plugins: [
 		svelte({
@@ -57,6 +58,9 @@ export default {
 			dedupe: ['svelte']
 		}),
 		commonjs(),
+
+		// Empties the output dir before a new build
+		emptyDir(),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated

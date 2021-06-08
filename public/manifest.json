@@ -12,6 +12,7 @@
     },
     "content_scripts": [
       {
+        "css": ["content/styles.css"],
         "js": ["content/index.js"],
         "matches": ["https://*/*", "http://*/*"]
       }
