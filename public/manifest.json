@@ -16,5 +16,6 @@
         "js": ["content/index.js"],
         "matches": ["https://*/*", "http://*/*"]
       }
-    ]
+    ],
+    "options_page": "options.html"
   }
